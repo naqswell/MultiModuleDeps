@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="go_feature_args_consumer">Go Feature Args Consumer</string>
+    <string name="go_feature_threads">Go Feature Threads</string>
+    <string name="go_feature_compound_view">Go Feature Compound View</string>
+    <string name="enter_id">Enter id</string>
+    <string name="enter_additional_info">Type something</string>
+</resources>

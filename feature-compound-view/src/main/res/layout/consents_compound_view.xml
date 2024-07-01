@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/consentsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consents"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/consentsSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        />
+
+    <CheckBox
+        android:id="@+id/consent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:paddingStart="8dp"
+        android:text="Consents1" />
+
+    <CheckBox
+        android:id="@+id/consent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:paddingStart="8dp"
+        android:text="Consents2" />
+
+</merge>
