@@ -13,7 +13,7 @@ import com.example.core.presentation.ContainerId
 import com.example.feature_threads.R
 import com.example.feature_threads.databinding.FragmentFeatureThreadsBinding
 import com.example.feature_threads.internal.di.DaggerFeatureThreadsComponent
-import com.example.feature_threads.internal.screenflows.host.HostFragment
+import com.example.feature_threads.internal.screenflows.host.presentation.HostFragment
 import javax.inject.Inject
 
 class FeatureThreadsFragment : Fragment(R.layout.fragment_feature_threads), HasDependencies {
@@ -27,7 +27,9 @@ class FeatureThreadsFragment : Fragment(R.layout.fragment_feature_threads), HasD
             .create(
                 dependencies = findDependencies(),
                 fragmentManager = childFragmentManager
-            ).also { it.inject(this@FeatureThreadsFragment) }
+            ).also {
+                it.inject(this@FeatureThreadsFragment)
+            }
         super.onAttach(context)
     }
 
@@ -44,8 +46,7 @@ class FeatureThreadsFragment : Fragment(R.layout.fragment_feature_threads), HasD
 
     fun initBackHandlerForActivity() {
         requireActivity().onBackPressedDispatcher.addCallback {
-            if (childFragmentManager.backStackEntryCount > 0)
-                childFragmentManager.popBackStack()
+            if (childFragmentManager.backStackEntryCount > 0) childFragmentManager.popBackStack()
             this.remove()
         }
     }

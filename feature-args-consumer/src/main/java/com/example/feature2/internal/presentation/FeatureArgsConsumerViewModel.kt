@@ -1,5 +1,6 @@
 package com.example.feature2.internal.presentation
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.feature2.api.FeatureArgsConsumerFragment
 import com.example.feature2.internal.presentation.mapper.DataDisplayable
@@ -17,11 +18,12 @@ class FeatureArgsConsumerViewModel @AssistedInject constructor(
     internalLogger: InternalLogger
 ) : ViewModel() {
 
-    private val _uiStateFlow: MutableStateFlow<UiState<DataDisplayable>> =
-        MutableStateFlow(UiState.Loading)
-    val uiStateFlow
-        get() = _uiStateFlow.asStateFlow()
+    init {
+        Log.d("FeatureArgsConsumerViewModel", internalLogger.getStatus())
+    }
 
+    private val _uiStateFlow = MutableStateFlow<UiState<DataDisplayable>>(UiState.Loading)
+    val uiStateFlow get() = _uiStateFlow.asStateFlow()
 
     init {
         _uiStateFlow.value =

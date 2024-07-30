@@ -20,10 +20,15 @@ class FeatureMainFragment : Fragment(R.layout.fragment_feature_main) {
 
 
     override fun onAttach(context: Context) {
-        injector = DaggerFeatureMainComponent.factory().create(findDependencies()).also {
-            it.inject(this@FeatureMainFragment)
-        }
-        viewModel.initCommunicator(injector.featuresCommunicator)
+        injector = DaggerFeatureMainComponent
+            .factory()
+            .create(
+                dependencies = findDependencies()
+            )
+            .also {
+                it.inject(this@FeatureMainFragment)
+            }
+        viewModel.configure(injector.featuresCommunicator)
         super.onAttach(context)
     }
 

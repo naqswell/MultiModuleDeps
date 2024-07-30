@@ -30,9 +30,13 @@ class FeatureArgsConsumerFragment : Fragment(R.layout.fragment_feature_2) {
     }
 
     override fun onAttach(context: Context) {
-        injector = DaggerFeatureArgsConsumerComponent.factory().create(findDependencies()).apply {
-            inject(this@FeatureArgsConsumerFragment)
-        }
+        injector = DaggerFeatureArgsConsumerComponent
+            .factory()
+            .create(
+                dependencies = findDependencies()
+            ).also {
+                it.inject(this@FeatureArgsConsumerFragment)
+            }
 
         super.onAttach(context)
     }

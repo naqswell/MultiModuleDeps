@@ -10,7 +10,7 @@ class FeatureMainViewModel @Inject constructor(
 
     private var featureArgsCommunicator: OtherFeaturesCommunicator? = null
 
-    fun initCommunicator(communicator: OtherFeaturesCommunicator) {
+    fun configure(communicator: OtherFeaturesCommunicator) {
         featureArgsCommunicator = communicator
     }
 

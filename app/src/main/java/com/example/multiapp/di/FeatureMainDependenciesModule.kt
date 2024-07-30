@@ -25,8 +25,7 @@ interface FeatureMainDependenciesModule {
         fun otherFeaturesFragmentCommunicator(
             fragmentManager: FragmentManager, containerId: ContainerId
         ): OtherFeaturesCommunicator = object : OtherFeaturesCommunicator {
-            override fun onOpenFeatureArgs(id: Int, additional: String) =
-                fragmentManager.commit {
+            override fun onOpenFeatureArgs(id: Int, additional: String) = fragmentManager.commit {
                     replace(
                         containerId.value,
                         FeatureArgsConsumerFragment.newInstance(id = id, additional = additional)
