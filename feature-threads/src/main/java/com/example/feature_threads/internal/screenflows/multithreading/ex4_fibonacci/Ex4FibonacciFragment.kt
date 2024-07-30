@@ -33,7 +33,7 @@ class Ex4FibonacciFragment : Fragment(R.layout.fragment_ex4_fibonacci) {
 
     private var mNumberOfThreads = 0
     private var mThreadsComputationRanges = mutableListOf<ComputationRange>()
-    private var mThreadsComputationResults = mutableListOf<BigInteger?>()
+    @Volatile private var mThreadsComputationResults = mutableListOf<BigInteger?>()
     private var mNumOfFinishedThreads = AtomicInteger(0)
 
 
