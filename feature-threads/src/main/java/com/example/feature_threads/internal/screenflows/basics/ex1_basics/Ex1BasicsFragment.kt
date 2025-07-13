@@ -8,7 +8,7 @@ import com.example.feature_threads.R
 import com.example.feature_threads.databinding.FragmentEx1BasicsBinding
 import kotlin.concurrent.thread
 
-class Ex1BasicsFragment: Fragment(R.layout.fragment_ex1_basics) {
+internal class Ex1BasicsFragment: Fragment(R.layout.fragment_ex1_basics) {
 
     companion object {
         fun newInstance() : Fragment = Ex1BasicsFragment().apply {}

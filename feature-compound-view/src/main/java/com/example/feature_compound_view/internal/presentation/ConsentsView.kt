@@ -9,7 +9,7 @@ import android.widget.LinearLayout
 import com.example.feature_compound_view.R
 import com.example.feature_compound_view.databinding.ConsentsCompoundViewBinding
 
-class ConsentsView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :
+internal class ConsentsView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null) :
     LinearLayout(context, attrs) {
 
     var onConsentsCheckedChangeListener: (allConsentsChecked: Boolean) -> Unit = {}

@@ -9,7 +9,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-interface FeatureThreadsModule {
+internal interface FeatureThreadsModule {
 
     companion object {
         @Provides

@@ -9,7 +9,7 @@ import dagger.Component
     modules = [FeatureArgsConsumerModule::class],
     dependencies = [FeatureArgsConsumerDependencies::class]
 )
-interface FeatureArgsConsumerComponent {
+internal interface FeatureArgsConsumerComponent {
     val viewModelFactory: FeatureArgsConsumerViewModel.Factory
 
     fun inject(fragment: FeatureArgsConsumerFragment)

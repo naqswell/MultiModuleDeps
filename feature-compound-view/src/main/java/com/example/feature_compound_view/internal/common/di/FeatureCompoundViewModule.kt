@@ -6,7 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
-interface FeatureCompoundViewModule {
+internal interface FeatureCompoundViewModule {
     @Binds
     fun bindInternalLogger(impl: InternalLoggerImpl): InternalLogger
 }

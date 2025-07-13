@@ -6,7 +6,7 @@ import com.example.feature_threads.R
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.concurrent.thread
 
-class Ex2StoppingFragment : Fragment(R.layout.fragment_ex2_stopping) {
+internal class Ex2StoppingFragment : Fragment(R.layout.fragment_ex2_stopping) {
 
     private val mDummyData = ByteArray(50 * 1000 * 1000)
     private val countScreenTimeFlag = AtomicBoolean(true)

@@ -10,7 +10,7 @@ import com.example.feature_threads.internal.screenflows.uithread.customhandler.C
 import com.example.feature_threads.internal.screenflows.uithread.ex3.Ex3Fragment
 import javax.inject.Inject
 
-class ScreenNavigatorImpl @Inject constructor(
+internal class ScreenNavigatorImpl @Inject constructor(
     private val fragmentManager: FragmentManager,
     private val containerId: ContainerId,
 ) : ScreenNavigator {

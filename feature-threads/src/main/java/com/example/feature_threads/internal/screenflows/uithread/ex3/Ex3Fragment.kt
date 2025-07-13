@@ -9,7 +9,7 @@ import com.example.feature_threads.R
 import com.example.feature_threads.databinding.FragmentEx3Binding
 import kotlin.concurrent.thread
 
-class Ex3Fragment : Fragment(R.layout.fragment_ex3) {
+internal class Ex3Fragment : Fragment(R.layout.fragment_ex3) {
 
     companion object {
         fun newInstance(): Fragment = Ex3Fragment().apply {}

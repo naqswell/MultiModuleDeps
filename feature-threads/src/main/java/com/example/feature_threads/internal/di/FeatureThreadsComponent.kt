@@ -14,7 +14,7 @@ import dagger.Component
     ],
     dependencies = [FeatureThreadsDependencies::class]
 )
-interface FeatureThreadsComponent : HostFragmentDependencies {
+internal interface FeatureThreadsComponent : HostFragmentDependencies {
 
     fun inject(fragment: FeatureThreadsFragment)
 

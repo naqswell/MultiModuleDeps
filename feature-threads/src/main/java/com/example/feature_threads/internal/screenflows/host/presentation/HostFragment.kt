@@ -12,7 +12,7 @@ import com.example.feature_threads.databinding.FragmentHostBinding
 import com.example.feature_threads.internal.screenflows.host.di.DaggerHostFragmentComponent
 import com.example.feature_threads.internal.screenflows.host.di.HostFragmentComponent
 
-class HostFragment : Fragment(R.layout.fragment_host) {
+internal class HostFragment : Fragment(R.layout.fragment_host) {
 
     companion object {
         fun newInstance(): Fragment = HostFragment().apply {}

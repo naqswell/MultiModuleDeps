@@ -10,7 +10,7 @@ import dagger.Component
     modules = [HostFragmentModule::class],
     dependencies = [HostFragmentDependencies::class]
 )
-interface HostFragmentComponent {
+internal interface HostFragmentComponent {
     val viewModel: HostViewModel
     val screenNavigator: ScreenNavigator
 

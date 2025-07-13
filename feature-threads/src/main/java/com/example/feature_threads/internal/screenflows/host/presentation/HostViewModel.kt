@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import com.example.feature_threads.internal.navigation.ScreenNavigator
 import javax.inject.Inject
 
-class HostViewModel @Inject constructor(
+internal class HostViewModel @Inject constructor(
 ): ViewModel() {
 
     private var screenNavigator: ScreenNavigator? = null

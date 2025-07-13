@@ -10,7 +10,7 @@ import java.util.concurrent.BlockingQueue
 import java.util.concurrent.LinkedBlockingDeque
 import kotlin.concurrent.thread
 
-class CustomHandlerFragment: Fragment(R.layout.fragment_custom_handler) {
+internal class CustomHandlerFragment: Fragment(R.layout.fragment_custom_handler) {
 
     companion object {
         fun newInstance(): Fragment = CustomHandlerFragment().apply {}

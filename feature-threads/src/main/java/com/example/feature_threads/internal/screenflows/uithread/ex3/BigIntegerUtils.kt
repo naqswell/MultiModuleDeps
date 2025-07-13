@@ -2,10 +2,10 @@ package com.example.feature_threads.internal.screenflows.uithread.ex3
 
 import java.math.BigInteger
 
-operator fun BigInteger.rangeTo(other: BigInteger) =
+internal operator fun BigInteger.rangeTo(other: BigInteger) =
     BigIntegerRange(this, other)
 
-class BigIntegerRange(
+internal class BigIntegerRange(
     override val start: BigInteger,
     override val endInclusive: BigInteger
 ) : ClosedRange<BigInteger>, Iterable<BigInteger> {
@@ -13,7 +13,7 @@ class BigIntegerRange(
         BigIntegerRangeIterator(this)
 }
 
-class BigIntegerRangeIterator(
+internal class BigIntegerRangeIterator(
     private val range: ClosedRange<BigInteger>
 ) : Iterator<BigInteger> {
     private var current = range.start

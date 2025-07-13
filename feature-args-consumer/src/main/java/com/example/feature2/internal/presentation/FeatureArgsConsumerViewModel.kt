@@ -13,7 +13,7 @@ import dagger.assisted.AssistedInject
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
-class FeatureArgsConsumerViewModel @AssistedInject constructor(
+internal class FeatureArgsConsumerViewModel @AssistedInject constructor(
     @Assisted private val args: FeatureArgsConsumerFragment.Args?,
     internalLogger: InternalLogger
 ) : ViewModel() {

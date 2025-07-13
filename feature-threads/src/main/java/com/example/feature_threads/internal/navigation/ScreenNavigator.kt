@@ -1,6 +1,6 @@
 package com.example.feature_threads.internal.navigation
 
-interface ScreenNavigator {
+internal interface ScreenNavigator {
     fun onCustomHandlerScreen()
     fun onExercise1Screen()
     fun onExercise2Screen()

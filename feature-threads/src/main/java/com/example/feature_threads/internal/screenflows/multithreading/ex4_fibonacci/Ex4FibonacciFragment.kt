@@ -17,7 +17,7 @@ import java.math.BigInteger
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.concurrent.thread
 
-class Ex4FibonacciFragment : Fragment(R.layout.fragment_ex4_fibonacci) {
+internal class Ex4FibonacciFragment : Fragment(R.layout.fragment_ex4_fibonacci) {
 
     companion object {
         const val MAX_TIMEOUT_MS: Int = 1000

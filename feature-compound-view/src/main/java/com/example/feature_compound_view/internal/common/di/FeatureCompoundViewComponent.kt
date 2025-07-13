@@ -8,7 +8,7 @@ import dagger.Component
     modules = [FeatureCompoundViewModule::class],
     dependencies = [FeatureCompoundViewDependencies::class]
 )
-interface FeatureCompoundViewComponent {
+internal interface FeatureCompoundViewComponent {
 
     fun inject(fragment: FeatureCompoundViewFragment)
 
